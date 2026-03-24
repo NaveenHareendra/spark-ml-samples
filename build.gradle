@@ -1,0 +1,42 @@
+allprojects {
+  group = 'com.morning.lohika.spark.ml'
+  version = '1.0-SNAPSHOT'
+}
+
+subprojects {
+  apply plugin: 'java'
+  sourceCompatibility = 1.8
+  targetCompatibility = 1.8
+
+  repositories {
+    jcenter()
+    mavenLocal()
+    mavenCentral()
+
+//    maven {
+//      url "http://dl.bintray.com/spark-packages/maven"
+//    }
+  }
+  dependencies {
+    compile group: 'master', name: 'spark-stemming_2.10', version: '0.1.1'
+  }
+}
+// in spark-distributed-library/build.gradle
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+// Definition of dependency versions.
+ext {
+  springBootVersion = '1.5.6.RELEASE'
+  slf4jVersion = '1.7.25'
+  logbackVersion = '1.2.3'
+  sparkJacksonVersion = '2.8.9'
+  sparkJaninoVersion = '3.0.8'
+
+  apacheSparkVersion = '2.3.0'
+  apacheSparkScalaVersion = '2.11'
+
+  junitVersion = '4.12'
+  springFrameworkVersion = '4.3.11.RELEASE'
+}
