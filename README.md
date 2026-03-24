@@ -14,19 +14,6 @@ Can be found under "trained data folder", this is a real world data set
 : Ref: Music Dataset: Lyrics and Metadata from 1950 to 2019
 from: https://data.mendeley.com/datasets/3t9vbwxgr5/2 
 
-#### DOU Dataset Regression
-Given poll results predict salary based on experience, English level and programming language.
-
-Nuances:
-* English level is string, should be converted to numeric, e.g. 0…5
-* Languages are strings, should be exploded to 18 booleans, e.g. java=0|1, python=0|1, etc.
-* Vector and verse settings are in code...
-
-Nuances:
-* English level is string, should be converted to numeric, e.g. 0…5
-* 1$ difference in salary is not as significant as 1 year of experience, so data should be scaled before clustering
-* Dense vector is ok  
-
 ###  Multiple genres: Pop, Hiphop, etc.
 Given verse from verse1 recognize genre.
 
