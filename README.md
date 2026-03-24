@@ -6,12 +6,13 @@ This is now a sample application that  has the ability to predict 7 music genres
 
 There was a small UI developed for this as well, you can access it in my profile named as spark-ml-ui-analytics
 
-<img src="https://drive.google.com/file/d/1qOZSATAHoU_0QiVAQvRD1hBWGwiKJq-S/view?usp=sharing">
+<img width="1872" height="966" alt="Screenshot 2026-03-24 102735" src="https://github.com/user-attachments/assets/7c7d457d-f87c-4324-acd7-8cfdc438146f" />
 
 
 ### Music dataset
-DOU (http://dou.ua) stands for developers.org.ua is a main hub for Ukrainian developers.
-It provides anonymous survey for getting information about Ukrainian engineers, their salary, experience, English level, etc. 
+Can be found under "trained data folder", this is a real world data set 
+: Ref: Music Dataset: Lyrics and Metadata from 1950 to 2019
+from: https://data.mendeley.com/datasets/3t9vbwxgr5/2 
 
 #### DOU Dataset Regression
 Given poll results predict salary based on experience, English level and programming language.
@@ -29,7 +30,7 @@ Nuances:
 * 1$ difference in salary is not as significant as 1 year of experience, so data should be scaled before clustering
 * Dense vector is ok  
 
-### Pop vs. Heavy Metal
+###  Multiple genres: Pop, Hiphop, etc.
 Given verse from verse1 recognize genre.
 
 Strategy:
@@ -37,11 +38,6 @@ Strategy:
 * Create training set, i.e. label (0|1...6) + features
 * Train logistic regression
 
-### MNIST Dataset
-Given set of images recognize digits.
-
-Nuances:
-* Transform images into training examples
 
 ## Build, Configure and Run
 
