@@ -22,9 +22,6 @@ Nuances:
 * Languages are strings, should be exploded to 18 booleans, e.g. java=0|1, python=0|1, etc.
 * Vector and verse settings are in code...
 
-#### DOU Dataset Clustering
-Given poll results predict level (junior, middle, senior) based on experience and English level.
-
 Nuances:
 * English level is string, should be converted to numeric, e.g. 0…5
 * 1$ difference in salary is not as significant as 1 year of experience, so data should be scaled before clustering
